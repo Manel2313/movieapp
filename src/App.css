@@ -1,33 +1,106 @@
 .App {
   text-align: center;
+  color: white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchBar{
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.search{
+  width: 400px;
+  font-size: 25px;
+  background: white;
+  border: 1px solid black;
+}
+
+.search-btn{
+  border: 1px solid black;
+  border-left: none;
+  padding: 10px;
+  background: #03569e;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.addmovie{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.63);
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.addmovie input{
+  margin: 15px;
+  width: 400px;
+  font-size: 20px;
+}
+.annuler{
+  font-weight: 600;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  right: 400px;
+  cursor: pointer;
+}
+.annuler:hover{
+  text-shadow: 0px 0 6px #e0e0e0;
+  color: #f00;
+}
+.add-m{
+  padding: 10px 20px;
+  background: #01203a;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0 0 7px 2px #eee;
+  margin-top: 20px;
+}
+.add-m:hover{
+  color: #01203a;
+  background: white;
+  box-shadow: 0 0 7px 2px #01203a;
+  font-weight: 600
+}
+.none{
+  display: none;
+}
+.card-add{
+  font-size: 60px;
+  cursor: pointer;
+  text-shadow: 0 0 6px #eee;
+}
+.card-add:hover{
+  color: black;
+  cursor: pointer;
+  text-shadow: 0 0 6px #eee;
+  background: white
+}
+.card-add a{
+  text-decoration: none;
+  color: #03569e
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.str{
+  font-size: 25px;
+}
+.star-click{
+  color: aqua;
+  text-shadow: 0 0 5px #af0;
+  font-size: 25px;
 }
